@@ -1,0 +1,142 @@
+/* Import Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Parisienne&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: rgb(7, 75, 235);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+}
+
+.header-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+.NavigationBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.NavigationBar a {
+  text-decoration: none;
+  font-size: 1em;
+  /* Base font size */
+  transition: font-size 0.3s ease;
+  /* Smooth transition for font size */
+  color: rgb(255, 255, 255);
+  /* Starting color */
+}
+
+.NavigationBar a:hover {
+  font-size: 1.1em;
+  /* Slightly larger font size on hover */
+  animation: colorChange 5s linear infinite;
+}
+
+@keyframes colorChange {
+  from {
+    color: rgb(255, 255, 255);
+    /* Start color */
+  }
+
+  to {
+    color: rgb(0, 217, 255);
+    /* End color */
+  }
+}
+
+.headerButton {
+  display: flex;
+  justify-content: end;
+  color: black;
+}
+
+.headerButton button {
+  height: 5vh;
+  width: 10vw;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.headerButton button:hover {
+  animation: rainbow 5s linear infinite;
+  /* 5s animation, runs infinitely but only while hovered */
+  animation-fill-mode: forwards;
+}
+
+@keyframes rainbow {
+  0% {
+    background-color: red;
+  }
+
+  16.67% {
+    background-color: orange;
+  }
+
+  33.33% {
+    background-color: yellow;
+  }
+
+  50% {
+    background-color: green;
+  }
+
+  66.67% {
+    background-color: blue;
+  }
+
+  83.33% {
+    background-color: indigo;
+  }
+
+  100% {
+    background-color: violet;
+  }
+}
+
+header * {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: white;
+}
+
+main h1 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 98px;
+}
+
+main h3 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 58px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: 'Parisienne';
+  font-weight: 800;
+  font-size: 28px;
+  border: 15px white double;
+  background-image: url('Images/Images/GrokLifting.jpg');
+  background-size: contain;
+}
