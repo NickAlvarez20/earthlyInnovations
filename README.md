@@ -40,8 +40,7 @@ Clone the repository to your local machine:
 
 `git clone https://github.com/NickAlvarez20/earthlyInnovations.git`
 ## Usage
-Open the index.html file in a live node server or web browser from the command line or file explorer:
-Interact with the "Click to Change Title" button to see JavaScript in action.
+Ensure all associated assets (images in the Images folder, including Favicon, Logo Designs, and Images subdirectories, and the style.css file) are downloaded with the repository. Open the index.html file in using a live server or a modern web browser from the command line or file explorer: open index.html (on macOS) or simply double-click the file. Interact with the "Click to Change Title" button to see JavaScript in action.
 
 ## Learning Outcomes
 This project helped me:
